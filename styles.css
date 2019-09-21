@@ -1,0 +1,78 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: darkgrey;
+}
+.flexbox-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Dosis';
+    margin: 1.3em 0;
+}
+.image-container {
+    flex-grow: 1;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+.stage {
+    width: 32.9%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+}
+
+.stage .img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.stage img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.stage p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.3em;
+    font-family: 'Dosis', 'Arial', sans-serif;
+}
+
+.img:after {
+    position: absolute;
+    content: '';
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stage:last-of-type {
+    margin-left: 33.5%;
+}
+
+.banned .img:after {
+    background: rgba(255, 0, 0, .5);
+}
+
+.picked .img:after {
+    background: rgba(0, 255, 0, .3);
+}
